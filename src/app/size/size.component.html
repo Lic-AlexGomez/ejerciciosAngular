@@ -1,0 +1,29 @@
+
+<div >
+
+<h2 id="tabla">Tabla de Datos de Tamanios</h2>
+
+    <div *ngFor="let clave of objectKeys(size)">
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Abreviatura</th>
+          <th> Dimensiones</th>
+        </tr>
+        <tr>
+          <td>{{clave}}</td>
+          <td>{{size[clave]}}</td>
+          <td [ngSwitch]='size[clave]'>
+        <span *ngSwitchCase="'sm'">≥576px</span>
+        <span *ngSwitchCase="'md'">≥768px</span>
+        <span *ngSwitchCase="'lg'">≥992px</span>
+        <span *ngSwitchCase="'xl'">≥1200px</span>
+
+
+    </td>
+
+    </table>
+
+    </div>
+  </div>
+ 

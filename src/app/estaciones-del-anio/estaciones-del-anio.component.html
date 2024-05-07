@@ -1,0 +1,15 @@
+
+<h2>Esciones del Anio</h2>
+<select [(ngModel)]="estacionSeleccionada">
+  <option *ngFor="let estacion of estaciones" [value]="estacion">
+    {{estacion}}
+  </option>
+</select>
+
+<p>La estación seleccionada es: {{estacionSeleccionada}}</p>
+
+<h2>Comunicacion entre componentes:</h2>
+<button (click)=" enviarMensaje_EstacionDelAnio()">  EstacionDelAnio C. TO Menu C.</button>
+<p > Este mensaje viene desde el <span *ngIf="expression"> {{titulo_EstacionDelAnioI}}</span></p>
+
+

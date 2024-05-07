@@ -1,0 +1,8 @@
+<h1>Ejercios de Angular</h1>
+
+<app-menu  [titulo_menu]="titulo_appMain"  (enviar_menu)="recibirMensaje($event)"/>
+
+<button (click)="appToMenu()">APP C. TO Menu C.</button>
+<p >El mensaje fue enviado desde el <span *ngIf="condicion">{{ mensajeRecibido}}</span></p>
+
+

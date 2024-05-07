@@ -1,0 +1,12 @@
+<app-meses-del-anio/>
+<app-size/>
+<app-estaciones-del-anio  [titulo_EstacionDelAnioI]="titulo_menuE"  (enviar_EstacionDelAnio)="recibirMensaj($event)"/>
+
+
+
+
+ <button (click)="validad()">Menu C. To EstacionDelAnio C.</button>
+ <p >El mensaje fue enviado desde el <span *ngIf="expressio">{{ mensajeRecibid}}</span></p>
+
+ <button (click)="enviarMensaje_menu()">  Menu C. TO APP C.</button>
+ <p > Este mensaje viene desde el <span *ngIf="expression"> {{titulo_menu}}</span></p>
